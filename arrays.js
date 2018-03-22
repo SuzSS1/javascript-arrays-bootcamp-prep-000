@@ -1,3 +1,19 @@
 var chocollatesBars = [snickers, hundred grand, kitkat, skittles]
-var addElementToBeginningOfArray
-var destructivelyAddElementToBeginningOfArray =
+
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array]
+}
+
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift(element)
+  return array
+}
+
+function addElementToEndOfArray(array, element) {
+  return [...array, element]
+}
+
+function desctructivelyAddElementToEndOfArray(array, element) {
+  array.push(element)
+  return array
+}
